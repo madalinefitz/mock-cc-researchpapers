@@ -31,10 +31,10 @@ with app.app_context():
 
     print("Creating ResearchAuthors...")
 
-    ra1 = ResearchAuthors(author_id = a1, research_id = r1)
-    ra2 = ResearchAuthors(author_id = a2, research_id  = r2)
-    ra3 = ResearchAuthors(author_id = a3, research_id = r3)
-    ra4 = ResearchAuthors(author_id = a1, research_id = r3)
+    ra1 = ResearchAuthors(author_id = 1, research_id = 1)
+    ra2 = ResearchAuthors(author_id = 2, research_id  = 2)
+    ra3 = ResearchAuthors(author_id = 3, research_id = 3)
+    ra4 = ResearchAuthors(author_id = 1, research_id = 3)
     researchAuthor = [ra1, ra2, ra3, ra4]
     db.session.add_all(research_papers)
     db.session.add_all(authors)
